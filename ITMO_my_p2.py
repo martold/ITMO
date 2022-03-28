@@ -57,3 +57,27 @@ while (True):
     value = input()
     dict[key] = value
 print(dict)
+
+#####
+mylist = [1, 21, "asd", 23.2]
+mylist.insert(2, 23)
+print(mylist)
+
+mass = [0]*25
+print(mass)
+mass[-1] = 100 # -1 последний элемент
+print(mass)
+
+newmass = mylist
+newmass[2] = 'Hello'
+print(newmass)
+
+newmass = mylist.copy()
+newmass[2] = "Pello"
+print(newmass)
+print(mylist)
+
+nw = mylist[:]
+print(nw)
+
+nat = "1 2 3 4 5 jk lkj 12"
