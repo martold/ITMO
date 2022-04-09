@@ -10,10 +10,10 @@ for i in requiredFiles:
         file = open(path + i)
         shutil.copyfile(path + i, path + currentTime + '_' + i)
         sys.stdout = open(logfile, 'a')
-        print(currentTime, "- file", i, "has been succefully copied\n")
+        print(currentTime, "- file", i, "has been successfully COPIED\n")
         os.remove(path + i)
         sys.stdout = open(logfile, 'a')
-        print(currentTime, "- original file", i, "has been succefully deleted\n")
+        print(currentTime, "- original file", i, "has been successfully DELETED\n")
     except:
         sys.stdout = open(logfile, 'a')
         print(currentTime, "- ERROR: file", i, "does not exist\n")
